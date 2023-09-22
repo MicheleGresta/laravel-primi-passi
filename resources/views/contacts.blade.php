@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina 1</title>
+    <title>pagina 2</title>
     <!-- CUSTOM STYLE SHEET FILE LINK -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -28,9 +28,6 @@
 
 <body>
 
-
-
-
     <div class="container">
         <div class="row">
 
@@ -40,20 +37,13 @@
                 <li><a href="/contacts">Contact us</a></li>
             </ul>
         </div>
-
         <div class="row">
-            <div class="col card-container d-flex">
-                @foreach ($persone as $persona)
-                    <div class="card w-25 h-100 text-center">
-                        <h5 class="py-3">{{ $persona['nome'] }} {{ $persona['cognome'] }}</h5>
-                        <h6>{{ $persona['eta'] }} anni</h6>
-                    </div>
-                @endforeach
-            </div>
+            <img class="img-set"src="{{ $photo }}" alt="">
         </div>
+
+
+
     </div>
-
-
 
 
 
